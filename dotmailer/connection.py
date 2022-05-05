@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from __future__ import print_function
 import simplejson as json
 import requests
 import re
@@ -6,6 +8,7 @@ from requests.auth import HTTPBasicAuth
 
 from dotmailer import exceptions
 from dotmailer.constants import constants
+import logging
 
 
 class DotMailerConnection(object):
@@ -26,6 +29,7 @@ class DotMailerConnection(object):
     url = constants.DEFAULT_ENDPOINT
     username = None
     password = None
+    logger: logging.Logger = logging.getLogger(__name__)
 
     _first_cap_re = re.compile('(.)([A-Z][a-z]+)')
     _all_cap_re = re.compile('([a-z0-9])([A-Z])')
@@ -65,7 +69,7 @@ class DotMailerConnection(object):
             **kwargs
         )
 
-        print "Raw response:", response.text
+        self.logger.debug("Raw response:", response.text)
 
         # The response status code was a success then process the
         # response and return to the caller

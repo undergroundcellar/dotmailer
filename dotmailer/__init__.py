@@ -1,6 +1,8 @@
+from __future__ import absolute_import
 import datetime
 from dotmailer.connection import connection
 from dateutil.parser import parse as date_parser
+import logging
 
 
 def get_server_time():
@@ -24,6 +26,7 @@ class Base(object):
     id = None
     date_format = '%Y-%m-%dT%H:%M:%S'
     required_fields = []
+    logger: logging.Logger = logging.getLogger(__name__)
 
     def __init__(self, **kwargs):
         """

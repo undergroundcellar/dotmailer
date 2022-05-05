@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from __future__ import print_function
 from dotmailer import Base
 from dotmailer.connection import connection
 
@@ -47,7 +49,7 @@ class TransactionEmail(Base):
         return data
 
     def send(self):
-        print self.param_dict()
+        self.logger.debug(self.param_dict())
         response = connection.post(
             self.end_point,
             self.param_dict()
