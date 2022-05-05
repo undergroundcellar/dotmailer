@@ -9,7 +9,7 @@ with open(path.join(here, 'README.md')) as f:
     long_description = f.read()
 
 setup(
-    name='dotmailer',
+    name='ucdotmailer',
     version='0.5.0',
     description='DotMailer API wrapper',
     long_description=long_description,
@@ -34,7 +34,7 @@ setup(
 
     keywords='python dotmailer api',
     packages=find_packages(exclude=[]),
-    install_requires=['peppercorn'],
+    install_requires=['peppercorn','simplejson'],
 
 
 )
