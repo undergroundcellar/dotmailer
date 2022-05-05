@@ -1,7 +1,9 @@
+from __future__ import absolute_import
+from __future__ import print_function
 from dotmailer import Base
 from dotmailer.connection import connection
 from dotmailer.constants import constants
-
+from 
 
 class CampaignSends(Base):
     campaign_id = None
@@ -116,8 +118,7 @@ class Campaign(Base):
             self.param_dict()
         )
 
-        print '*' * 100
-        print response
+        self.logger.debug(response)
         self._update_values(response)
         return self
 

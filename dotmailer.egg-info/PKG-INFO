@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: dotmailer
+Version: 0.4.2
+Summary: DotMailer API wrapper
+Home-page: https://github.com/Mr-F/dotmailer
+Author: Keith M Franklin
+Author-email: test@test.com
+License: MIT
+Keywords: python dotmailer api
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+License-File: LICENSE
+
+# dotmailer
+
+[![Code Health](https://landscape.io/github/Mr-F/dotmailer/master/landscape.svg?style=flat)](https://landscape.io/github/Mr-F/dotmailer/master)
+
+
+Dotmailer API interface library
+
+Documentation: http://dotmailer.readthedocs.io/en/latest/
+
+
