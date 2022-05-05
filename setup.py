@@ -10,13 +10,13 @@ with open(path.join(here, 'README.md')) as f:
 
 setup(
     name='dotmailer',
-    version='0.4.2',
+    version='0.5.0',
     description='DotMailer API wrapper',
     long_description=long_description,
 
-    url='https://github.com/Mr-F/dotmailer',
+    url='https://github.com/undergroundcellar/dotmailer',
 
-    author='Keith M Franklin',
+    author='originally Keith M Franklin',
     author_email='test@test.com',
 
     license='MIT',
